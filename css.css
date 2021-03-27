@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 0.2s ease-in;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+
+}
+
+.container {
+    padding: 100px;
+    width: 100%;
+}
+
+.teams {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams::before {
+    content: "";
+    background-image: url('./images/bg-team-2.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: sepia();
+    z-index: -1;
+}
+
+.teams .heading h2 {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.teams .team-list {
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.teams .team {
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+.teams .team:hover {
+    transform: scale(1.04);
+    transform: 0.5s;
+    filter: grayscale();
+    cursor: pointer;
+}
+
+.teams .team:first-child {
+    margin-left: 0px;
+}
+
+.teams .card {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.red {
+    background-color: rgba(139, 0, 0, 0.527);
+}
+
+.orange {
+    background-color: rgba(255, 68, 0, 0.527);
+}
+
+.teams .team .image {
+    margin-top: 20px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.teams .team .image img {
+    object-fit: fill;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.teams .team .name {
+    margin-bottom: 30px;
+}
+
+.teams .team a {
+    text-decoration: none;
+    color: darkred;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.teams .team a:first-child {
+    margin-left: 0;
+}
+
+.teams .team .social-media {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 5px 0;
+    border-radius: 4px;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/* Contact Us */
+.contact {
+    height: 100vh;
+}
+
+.section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    float: left;
+    width: 50%;
+    padding-right: 35px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #dee7ec;
+}
+
+.contact-submit:hover {
+    color: green;
+    background-color: black;
+    cursor: pointer;
+}
+
+.contact-submit {
+    background-color: green;
+    color: white;
+    width: 30%;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.map {
+    float: right;
+    width: 50%;
+}
+
+/* Footer */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #2F4F4F;
+    color: #fff;
+    height: 220px;
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.footer-logo hr {
+    color: floralwhite;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
